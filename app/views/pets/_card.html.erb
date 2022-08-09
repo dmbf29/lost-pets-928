@@ -1,0 +1,9 @@
+<div class="card-product">
+  <%= image_tag "https://loremflickr.com/320/240/#{pet.species}" %>
+  <div class="card-product-infos">
+    <h2><%= link_to pet.name, pet_path(pet) %></h2>
+    <p><%= pet.address %></p>
+    <p><%= pet.species %></p>
+    <p>Found <%= pluralize(pet.found_days_ago, 'day') %> ago</p>
+  </div>
+</div>
